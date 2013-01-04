@@ -8,7 +8,6 @@ class ArticleTag < ActiveRecord::Base
 
   private
   def check_stuff
-    binding.pry
   end
 
 end

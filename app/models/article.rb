@@ -7,7 +7,7 @@ class Article < ActiveRecord::Base
 
   def add_to_default_tag
     if self.tags.empty?
-      self.tags << Tag.find_by_title("default")
+      self.tags << Tag.find_or_create_by_title("default")
     end
   end
 end
