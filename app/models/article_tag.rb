@@ -8,6 +8,7 @@ class ArticleTag < ActiveRecord::Base
 
   private
   def check_stuff
+    puts "whoa"
   end
 
 end
